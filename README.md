@@ -24,6 +24,8 @@ Depois, crie uma cópia do arquivo `wp-config-sample.php` com o nome de `wp-conf
 
 É necessário baixar uma versão do **Wordpress** para depois adicionar os arquivos deste repositório dentro da pasta `/wp-content/themes`
 
+No painel, nas configurações de **Leitura** é preciso colocar que a página inicial exiba uma página estática, e criar uma página com o nome **Home**, além disso nos **Links Permanentes** é preciso configurar a estrutura dos links como o nome do post.
+
 ---
 
 ## 📂 Estrutura
