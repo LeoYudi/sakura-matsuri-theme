@@ -1,0 +1,22 @@
+/*
+Theme Name: Sakura
+Author: Bunkyo
+Description: Tema simples customizado
+Version: 1.0
+*/
+
+/* Usar apenas para estilos globais */
+
+* {
+  margin: 0;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
