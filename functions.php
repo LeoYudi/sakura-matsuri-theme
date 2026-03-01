@@ -40,7 +40,8 @@ function theme_assets() {
     'theme_style',
     get_stylesheet_uri(),
     [],
-    time()
+    null,
+    'all'
   );
 
   // JS opcional
@@ -68,9 +69,11 @@ function import_css_by_page() {
         "css-page-{$slug}",
         get_template_directory_uri() . $path,
         [],
-        time()
+        null,
+        'all'
       );
     }
   }
 }
 add_action('wp_enqueue_scripts', 'import_css_by_page');
+?>
