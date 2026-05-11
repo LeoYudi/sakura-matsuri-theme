@@ -24,7 +24,8 @@ function setup_theme() {
 
   // Menus
   register_nav_menus([
-    'primary' => 'Menu Principal'
+    'primary' => 'Menu Principal',
+    'footer'  => 'Menu Rodapé'
   ]);
 }
 add_action('after_setup_theme', 'setup_theme');
@@ -56,11 +57,16 @@ function theme_assets() {
 add_action('wp_enqueue_scripts', 'theme_assets');
 
 function import_css_by_page() {
+  $slug = '';
 
   if (is_page()) {
     global $post;
-
     $slug = $post->post_name;
+  } elseif (is_404()) {
+    $slug = '404';
+  }
+
+  if ($slug) {
     $path = "/pages/{$slug}/style.css";
     $file = get_template_directory() . $path;
 
