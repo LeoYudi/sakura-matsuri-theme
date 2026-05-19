@@ -1,0 +1,134 @@
+/* ==========================================================================
+   PROGRAMAÇÃO PAGE STYLES
+   ========================================================================== */
+
+.prog-section {
+  padding: 4rem 0;
+}
+
+.date-strip {
+  background: var(--branco);
+  border: 1.5px solid var(--rosa-claro);
+  border-radius: 12px;
+  padding: 1.1rem 1.5rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.date-strip strong {
+  color: var(--vinho);
+}
+
+.tabs-label {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: .9rem;
+  color: var(--marrom);
+  margin-bottom: .75rem;
+}
+
+.prog-tabs {
+  display: flex;
+  gap: .6rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.prog-tab {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: .95rem;
+  padding: .6rem 1.4rem;
+  border-radius: 99px;
+  border: 2px solid var(--rosa);
+  background: transparent;
+  color: var(--vinho);
+  cursor: pointer;
+  transition: background .18s, color .18s;
+}
+
+.prog-tab.active,
+.prog-tab:hover {
+  background: var(--rosa);
+  color: var(--branco);
+}
+
+.prog-tab:focus {
+  outline: 3px solid var(--azul);
+  outline-offset: 3px;
+}
+
+.prog-notice {
+  background: var(--creme-rosado);
+  border-left: 5px solid var(--rosa);
+  border-radius: 0 12px 12px 0;
+  padding: 1.5rem 1.75rem;
+  font-size: 1rem;
+  color: var(--marrom);
+  margin-bottom: 2rem;
+}
+
+.prog-notice strong {
+  color: var(--vinho);
+}
+
+.prog-table-wrap {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1.5px solid var(--rosa-claro);
+}
+
+.prog-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  min-width: 560px;
+}
+
+.prog-table thead tr {
+  background: var(--rosa);
+}
+
+.prog-table th {
+  padding: .8rem 1.1rem;
+  text-align: left;
+  font-family: 'Quicksand', sans-serif;
+  font-size: .88rem;
+  font-weight: 700;
+  color: var(--branco);
+}
+
+.prog-table th:first-child {
+  width: 130px;
+}
+
+.prog-table th:last-child {
+  width: 170px;
+}
+
+.prog-table tbody tr:nth-child(even) {
+  background: var(--creme);
+}
+
+.prog-table tbody tr:nth-child(odd) {
+  background: var(--branco);
+}
+
+.prog-table td {
+  padding: .85rem 1.1rem;
+  color: var(--cinza);
+  vertical-align: top;
+  border-bottom: 1px solid var(--creme-rosado);
+}
+
+.prog-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.prog-empty {
+  text-align: center;
+  padding: 3rem;
+  color: var(--rosa);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+}

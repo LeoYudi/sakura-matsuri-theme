@@ -1,0 +1,104 @@
+/* ==========================================================================
+   HANAMI PAGE STYLES
+   ========================================================================== */
+
+.hanami-section {
+  padding: 4.5rem 0;
+}
+
+.hanami-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.hanami-body p {
+  margin-bottom: 1.1rem;
+}
+
+.hanami-body p:last-child {
+  margin-bottom: 0;
+}
+
+.highlight-word {
+  font-style: italic;
+  color: var(--vinho);
+  font-weight: 500;
+}
+
+.date-box {
+  background: var(--branco);
+  border-left: 5px solid var(--rosa);
+  border-radius: 0 12px 12px 0;
+  padding: 1.2rem 1.5rem;
+  font-size: 1rem;
+  margin-top: 1.75rem;
+}
+
+.date-box strong {
+  color: var(--vinho);
+}
+
+.date-box p {
+  margin-bottom: .3rem;
+}
+
+.img-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* INFO CARDS */
+.info-section {
+  padding: 4rem 0;
+  background: var(--branco);
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.info-card {
+  background: var(--creme);
+  border: 1.5px solid var(--rosa-claro);
+  border-radius: 14px;
+  padding: 1.5rem;
+}
+
+.info-card-icon {
+  font-size: 2rem;
+  margin-bottom: .6rem;
+  display: block;
+}
+
+.info-card h3 {
+  margin-bottom: .5rem;
+  color: var(--vinho);
+}
+
+.info-card p {
+  font-size: .97rem;
+}
+
+.img-block.tall {
+  min-height: 440px;
+}
+
+.img-block.medium {
+  min-height: 240px;
+}
+
+@media(max-width: 860px) {
+  .hanami-grid {
+    grid-template-columns: 1fr;
+  }
+  .img-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}

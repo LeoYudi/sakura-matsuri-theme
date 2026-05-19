@@ -48,7 +48,7 @@ function theme_assets() {
   // JS opcional
   wp_enqueue_script(
     'theme_script',
-    get_template_directory_uri() . '/assets/script.js',
+    get_template_directory_uri() . '/static/js/script.js',
     [],
     time(),
     true
@@ -82,4 +82,31 @@ function import_css_by_page() {
   }
 }
 add_action('wp_enqueue_scripts', 'import_css_by_page');
+
+function import_js_by_page() {
+  $slug = '';
+
+  if (is_page()) {
+    global $post;
+    $slug = $post->post_name;
+  } elseif (is_404()) {
+    $slug = '404';
+  }
+
+  if ($slug) {
+    $path = "/pages/{$slug}/script.js";
+    $file = get_template_directory() . $path;
+
+    if (file_exists($file)) {
+      wp_enqueue_script(
+        "js-page-{$slug}",
+        get_template_directory_uri() . $path,
+        [],
+        null,
+        true
+      );
+    }
+  }
+}
+add_action('wp_enqueue_scripts', 'import_js_by_page');
 ?>

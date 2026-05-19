@@ -1,50 +1,266 @@
-.coming-soon-section {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
+/* ==========================================================================
+   HOME PAGE STYLES
+   ========================================================================== */
+
+/* BANNER HERO */
+.hero {
+  background: linear-gradient(135deg, var(--creme) 0%, var(--creme-rosado) 100%);
+  padding: 0;
+}
+
+.hero-inner {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 4.5rem 1.5rem 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
   align-items: center;
-  justify-content: center;
-  z-index: 1;
 }
 
-.coming-soon-background-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: auto;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: 0;
-  object-fit: cover;
+.hero-edition {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: .88rem;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--rosa);
+  margin-bottom: .6rem;
 }
 
-.coming-soon-container {
-  position: relative;
-  z-index: 1;
-  background-color: white;
-  padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+.hero-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 4.5vw, 3rem);
+  color: var(--marrom);
+  line-height: 1.2;
+  margin-bottom: 1.1rem;
+}
+
+.hero-desc {
+  font-size: 1rem;
+  color: var(--cinza);
+  margin-bottom: 1.75rem;
+}
+
+.date-box {
+  background: var(--branco);
+  border-left: 5px solid var(--rosa);
+  border-radius: 0 12px 12px 0;
+  padding: 1.2rem 1.5rem;
+  font-size: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.date-box strong {
+  color: var(--vinho);
+}
+
+.date-box p {
+  margin-bottom: .3rem;
+}
+
+.stats {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.75rem;
 }
 
-.coming-soon-loading {
-  padding: 1px;
+.stat-card {
+  background: var(--branco);
   border-radius: 12px;
-  border: 2px solid #ee728a;
-  width: 100%;
-  display: flex;
-  align-items: center;
+  padding: .9rem 1.1rem;
+  text-align: center;
+  flex: 1;
+  min-width: 110px;
+  border: 1.5px solid var(--rosa-claro);
 }
 
-.coming-soon-loading .shimmer-animation {
-  max-width: 70%;
+.stat-num {
+  display: block;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 1.45rem;
+  color: var(--vinho);
+}
+
+.stat-label {
+  font-size: .78rem;
+  color: var(--cinza);
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+
+.btn-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* PRINCIPAIS ATRAÇÕES */
+.atracoes-section {
+  padding: 4.5rem 0;
+  background: var(--branco);
+}
+
+.atracoes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
+  gap: .9rem;
+  margin-top: 2rem;
+}
+
+.atracao-card {
+  background: var(--creme);
+  border: 1.5px solid var(--rosa-claro);
+  border-radius: 14px;
+  padding: 1.1rem 1rem;
+  text-align: center;
+  transition: transform .18s, box-shadow .18s;
+}
+
+.atracao-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(252, 115, 134, .16);
+}
+
+.atracao-icon {
+  font-size: 1.9rem;
+  margin-bottom: .5rem;
+  display: block;
+}
+
+.atracao-name {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: .9rem;
+  color: var(--marrom);
+}
+
+.img-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* ACESSO RÁPIDO */
+.quick-section {
+  padding: 4.5rem 0;
+}
+
+.quick-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+  margin-top: 2rem;
+}
+
+.quick-card {
+  background: var(--branco);
+  border: 1.5px solid var(--rosa-claro);
+  border-radius: 16px;
+  padding: 1.75rem 1.5rem;
+  text-decoration: none;
+  transition: transform .18s, box-shadow .18s;
+  display: block;
+}
+
+.quick-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 28px rgba(252, 115, 134, .18);
+}
+
+.quick-icon {
+  font-size: 2.2rem;
+  margin-bottom: .75rem;
+  display: block;
+}
+
+.quick-card h3 {
+  color: var(--vinho);
+  margin-bottom: .4rem;
+}
+
+.quick-card p {
+  font-size: .9rem;
+  color: var(--cinza);
+  margin: 0;
+}
+
+/* PATROCINADORES */
+.pat-section {
+  padding: 3.5rem 0;
+  background: var(--branco);
+}
+
+.pat-label {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: .8rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--cinza);
+  margin-bottom: .9rem;
+  display: block;
+  margin-top: 1.5rem;
+}
+
+.pat-label:first-child {
+  margin-top: 0;
+}
+
+.logos-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .9rem;
+  align-items: center;
+  margin-bottom: .5rem;
+}
+
+.logo-ph {
+  background: var(--creme-rosado);
+  border-radius: 10px;
+  width: 140px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: .78rem;
+  color: var(--rosa);
+  border: 1.5px dashed var(--rosa-claro);
+}
+
+/* IMAGE BLOCKS */
+.img-block.tall {
+  min-height: 420px;
+}
+
+.img-block.medium {
+  min-height: 260px;
+}
+
+.img-block.short {
+  min-height: 160px;
+}
+
+@media(max-width: 860px) {
+  .hero-inner {
+    grid-template-columns: 1fr;
+  }
+  .img-row {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width: 560px) {
+  .img-row {
+    grid-template-columns: 1fr;
+  }
+  .atracoes-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
