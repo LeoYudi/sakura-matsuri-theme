@@ -270,6 +270,7 @@
   .hero-inner {
     grid-template-columns: 1fr;
   }
+
   .img-row {
     grid-template-columns: 1fr 1fr;
   }
@@ -279,6 +280,7 @@
   .img-row {
     grid-template-columns: 1fr;
   }
+
   .atracoes-grid {
     grid-template-columns: 1fr 1fr;
   }

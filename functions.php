@@ -34,14 +34,25 @@ add_action('after_setup_theme', 'setup_theme');
 /* =====================================================
  * CSS e JS do tema
  * ===================================================== */
+function theme_version() {
+  static $version = null;
+
+  if ($version === null) {
+    $version = wp_get_theme()->get('Version');
+  }
+
+  return $version;
+}
+
 function theme_assets() {
+  $version = theme_version();
 
   // CSS principal
   wp_enqueue_style(
     'theme_style',
     get_stylesheet_uri(),
     [],
-    null,
+    $version,
     'all'
   );
 
@@ -50,7 +61,7 @@ function theme_assets() {
     'theme_script',
     get_template_directory_uri() . '/static/js/script.js',
     [],
-    time(),
+    $version,
     true
   );
 }
@@ -75,7 +86,7 @@ function import_css_by_page() {
         "css-page-{$slug}",
         get_template_directory_uri() . $path,
         [],
-        null,
+        theme_version(),
         'all'
       );
     }
@@ -102,7 +113,7 @@ function import_js_by_page() {
         "js-page-{$slug}",
         get_template_directory_uri() . $path,
         [],
-        null,
+        theme_version(),
         true
       );
     }

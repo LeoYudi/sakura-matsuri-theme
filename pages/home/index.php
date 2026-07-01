@@ -139,6 +139,9 @@ get_header();
           <img src="<?php echo esc_url( get_template_directory_uri() . '/static/images/sponsors/6%20-%20FUJIFILM_Slogan.png' ); ?>" alt="Fujifilm">
         </div>
         <div class="logo-box">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/static/images/sponsors/pilot.png' ); ?>" alt="Pilot">
+        </div>
+        <div class="logo-box">
           <img src="<?php echo esc_url( get_template_directory_uri() . '/static/images/sponsors/7%20-%20kaika.png' ); ?>" alt="KAIKA">
         </div>
         <div class="logo-box">
@@ -156,7 +159,7 @@ get_header();
       <span class="pat-label">Realização</span>
       <div class="logos-row">
         <div class="logo-box">
-          <img src="<?php echo esc_url( get_template_directory_uri() . '/static/images/sponsors/12%20-%20BUNKYO%20MARCA%20HORIZONTAL%20AF01.png' ); ?>" alt="Bunkyo">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/static/images/sponsors/bunkyo.png' ); ?>" alt="Bunkyo">
         </div>
         <div class="logo-box">
           <img src="<?php echo esc_url( get_template_directory_uri() . '/static/images/sponsors/12%20-%20BUNKYO%20MARCA%20HORIZONTAL%20AF01.png' ); ?>" alt="Parque Bunkyo">
