@@ -207,13 +207,21 @@
 }
 
 .img-block.tall {
-  min-height: 380px;
+  height: 380px;
+}
+
+.img-block {
+  padding: 0;
+  border: none;
+  background: none;
+  overflow: hidden;
 }
 
 @media(max-width: 860px) {
   .chegar-grid {
     grid-template-columns: 1fr;
   }
+
   .normas-grid {
     grid-template-columns: 1fr;
   }

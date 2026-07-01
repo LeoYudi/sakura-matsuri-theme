@@ -38,17 +38,15 @@ get_header();
               <div class="park-item">🚗 Carro<strong>R$ 60,00</strong></div>
               <div class="park-item">🏍 Moto<strong>Grátis</strong></div>
               <div class="park-item">🚲 Bicicleta<strong>Grátis</strong></div>
-              <div class="park-item">🚌 Ônibus<strong>R$ 60 + taxa</strong></div>
+              <div class="park-item">🚐 Van<strong>R$ 200,00</strong></div>
+              <div class="park-item">🚌 Micro-ônibus<strong>R$ 300,00</strong></div>
+              <div class="park-item">🚍 Ônibus<strong>R$ 400,00</strong></div>
             </div>
           </div>
         </div>
-        <!-- Mapa placeholder -->
-        <div class="img-block tall" role="img" aria-label="Espaço para mapa de localização do Parque Bunkyo Kokushikan em São Roque, SP">
-          <svg class="img-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" stroke="#fc7386" stroke-width="1.5" aria-hidden="true">
-            <path d="M24 4C16 4 10 10.3 10 18c0 11 14 26 14 26s14-15 14-26c0-7.7-6-14-14-14z" />
-            <circle cx="24" cy="18" r="4" />
-          </svg>
-          Mapa / Google Maps embed
+        <!-- Mapa Google Maps Embed -->
+        <div class="img-block tall">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8723.892623633841!2d-47.07022982562568!3d-23.631043354714283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf0a3b488bd44d%3A0x380b29031bab023e!2sParque%20Kokushikan%20Daigaku!5e0!3m2!1sen!2sbr!4v1782870253577!5m2!1sen!2sbr" width="100%" height="100%" style="border:0; display:block; border-radius: 16px;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
         </div>
       </div>
     </div>
@@ -63,67 +61,72 @@ get_header();
 
         <div class="faq-item" role="listitem">
           <button class="faq-q" aria-expanded="false" aria-controls="faq1">O festival é gratuito?<span class="faq-icon" aria-hidden="true">+</span></button>
-          <div class="faq-a" id="faq1" role="region">Sim! O festival é <strong>gratuito para todos os públicos</strong>. Não é necessário ingresso para entrar no evento. O único custo opcional é o estacionamento.</div>
+          <div class="faq-a" id="faq1" role="region">Sim, a entrada do festival é gratuita. Pedimos apenas a contribuição com o estacionamento do local.</div>
         </div>
 
         <div class="faq-item" role="listitem">
           <button class="faq-q" aria-expanded="false" aria-controls="faq2">Quanto custa o estacionamento?<span class="faq-icon" aria-hidden="true">+</span></button>
-          <div class="faq-a" id="faq2" role="region">Carro: R$ 60,00. Moto e bicicleta: gratuito. Ônibus de caravana: R$ 60,00 mais a taxa do site.</div>
+          <div class="faq-a" id="faq2" role="region">O valor depende do veículo:<br>Carros: R$ 60,00<br>Motos: Gratuito<br>Caravanas: Neste ano, optamos por cobrar o valor da entrada de caravanas para melhor controle do fluxo de veículos. As reservas serão feitas pela Ticket360.<br>Van: R$ 200,00<br>Micro-ônibus: 300,00<br>Ônibus: R$ 400,00</div>
         </div>
 
         <div class="faq-item" role="listitem">
           <button class="faq-q" aria-expanded="false" aria-controls="faq3">Posso levar meu pet?<span class="faq-icon" aria-hidden="true">+</span></button>
-          <div class="faq-a" id="faq3" role="region">Sim! Pets são bem-vindos, desde que com <strong>coleira e acompanhados de um responsável</strong>. Atenção: pets <strong>não são permitidos no ônibus oficial</strong> do evento.</div>
+          <div class="faq-a" id="faq3" role="region">Sim, o evento é Pet Friendly. No entanto, recomendamos não levar animais que não estejam acostumados com grandes aglomerações, pois o público do festival pode chegar a 60 mil pessoas. Vale ressaltar que os tutores são integralmente responsáveis pela segurança, bem-estar e pelo recolhimento dos dejetos dos animais.</div>
         </div>
 
         <div class="faq-item" role="listitem">
           <button class="faq-q" aria-expanded="false" aria-controls="faq4">O evento tem acessibilidade?<span class="faq-icon" aria-hidden="true">+</span></button>
-          <div class="faq-a" id="faq4" role="region">Sim! <strong>Cadeirantes têm acesso facilitado</strong> no parque. O evento também conta com um <strong>Espaço Melhor Idade exclusivo</strong> para visitantes da terceira idade.</div>
+          <div class="faq-a" id="faq4" role="region">O evento conta com infraestrutura voltada para toda a família, oferecendo inclusive espaços dedicados à melhor idade. Como o parque possui amplas áreas de natureza e chão arenoso, algumas áreas podem exigir cuidado redobrado na locomoção.</div>
         </div>
 
         <div class="faq-item" role="listitem">
           <button class="faq-q" aria-expanded="false" aria-controls="faq5">Como comprar o ingresso do ônibus sem internet?<span class="faq-icon" aria-hidden="true">+</span></button>
-          <div class="faq-a" id="faq5" role="region">Compra presencial na <strong>Secretaria do Bunkyo</strong>, de segunda a sexta, das 9h às 18h.<br>Endereço: Rua São Joaquim, 381 – Liberdade, SP.<br>Telefone: <a href="tel:+551132081755" style="color:var(--azul)">(11) 3208-1755</a></div>
+          <div class="faq-a" id="faq5" role="region">As vendas de passagens de ônibus também ocorrem de forma presencial diretamente na secretaria do Bunkyo, localizada na Rua São Joaquim, no bairro da Liberdade em São Paulo.</div>
         </div>
 
         <div class="faq-item" role="listitem">
           <button class="faq-q" aria-expanded="false" aria-controls="faq6">O parque abre durante a semana?<span class="faq-icon" aria-hidden="true">+</span></button>
-          <div class="faq-a" id="faq6" role="region">O festival ocorre <strong>apenas nos finais de semana</strong>: 04, 05, 11 e 12 de julho de 2026. O parque não está aberto para visitação durante a semana.</div>
+          <div class="faq-a" id="faq6" role="region">Além dos dias do evento, o parque está aberto para visitação e contemplação das cerejeiras durante esse curto período.<br>Período de visitação na semana: 06 à 10 de Julho e 13 à 17 de Julho.<br>Atenção: nesses dias o funcionamento é reduzido, não havendo ônibus oficial do evento, nem as atrações culturais e gastronômicas dos finais de semana.</div>
         </div>
 
         <div class="faq-item" role="listitem">
           <button class="faq-q" aria-expanded="false" aria-controls="faq7">O que é o Hanami?<span class="faq-icon" aria-hidden="true">+</span></button>
-          <div class="faq-a" id="faq7" role="region">Hanami (花見) é a tradicional prática japonesa de apreciar as flores das cerejeiras. A palavra significa literalmente "contemplar flores". <a href="<?php echo esc_url(home_url('/hanami')); ?>" style="color:var(--azul)">Saiba mais na página Hanami.</a></div>
+          <div class="faq-a" id="faq7" role="region">O Hanami é um costume ancestral japonês que significa "contemplar as flores", celebrando a beleza da natureza, a transitoriedade e a renovação da vida. Convidamos o público a praticar o hanami durante os dias da semana devido o fluxo reduzido, possibilitando fazer piqueniques, fotos únicas e maior tranquilidade pelo parque.</div>
         </div>
 
         <div class="faq-item" role="listitem">
           <button class="faq-q" aria-expanded="false" aria-controls="faq8">O que é o Tooro Nagashi?<span class="faq-icon" aria-hidden="true">+</span></button>
-          <div class="faq-a" id="faq8" role="region">O Tooro Nagashi (灯籠流し) é a cerimônia japonesa de soltar lanternas na água, como forma de homenagear os antepassados. Uma das atrações mais emocionantes do festival.</div>
+          <div class="faq-a" id="faq8" role="region">É uma belíssima e tradicional cerimônia budista. Nela, pequenas lanternas de papel iluminadas são lançadas no lago, criando um espetáculo visual que serve como homenagem aos espíritos ancestrais.<br>A cerimônia acontece no segundo sábado do evento (11/07) e o público pode escrever suas preces nas lanternas unicamente na tenda localizada próximo ao lago do parque.<br>Atenção: A atração é paga, confira o valor no local!</div>
         </div>
 
         <div class="faq-item" role="listitem">
           <button class="faq-q" aria-expanded="false" aria-controls="faq9">O que é o trenzinho do evento?<span class="faq-icon" aria-hidden="true">+</span></button>
-          <div class="faq-a" id="faq9" role="region">O trenzinho percorre o parque, facilitando o deslocamento entre as atrações. É especialmente útil para visitantes idosos, crianças e pessoas com mobilidade reduzida. Mais informações serão divulgadas em breve.</div>
+          <div class="faq-a" id="faq9" role="region">É um passeio guiado por dentro do parque, permitindo que os visitantes percorram as trilhas para observar as cerejeiras e se locomoverem mais facilmente nos polos do parque.<br>Atenção: A atração é paga, confira o valor no local!</div>
         </div>
 
         <div class="faq-item" role="listitem">
           <button class="faq-q" aria-expanded="false" aria-controls="faq10">Posso levar alimento próprio ao evento?<span class="faq-icon" aria-hidden="true">+</span></button>
-          <div class="faq-a" id="faq10" role="region">Sim! É permitido levar alimentos próprios para aproveitar o evento, inclusive para o piquenique no Hanami.</div>
+          <div class="faq-a" id="faq10" role="region">R: Sim, os visitantes podem trazer suas próprias comidas e bebidas.</div>
         </div>
 
         <div class="faq-item" role="listitem">
           <button class="faq-q" aria-expanded="false" aria-controls="faq11">Posso fazer piquenique no evento?<span class="faq-icon" aria-hidden="true">+</span></button>
-          <div class="faq-a" id="faq11" role="region">Sim! Piqueniques são bem-vindos no parque, especialmente sob as cerejeiras. É uma das formas mais autênticas de praticar o Hanami.</div>
+          <div class="faq-a" id="faq11" role="region">Recomendamos a realização de piqueniques especialmente durante a semana, pelo fluxo menor do parque e evitar a monopolização das árvores que as pessoas queiram tirar foto por muito tempo.</div>
         </div>
 
         <div class="faq-item" role="listitem">
           <button class="faq-q" aria-expanded="false" aria-controls="faq12">Posso fazer ensaio fotográfico no evento?<span class="faq-icon" aria-hidden="true">+</span></button>
-          <div class="faq-a" id="faq12" role="region">Mais informações sobre ensaios fotográficos serão divulgadas em breve. Fique de olho nas redes sociais do festival.</div>
+          <div class="faq-a" id="faq12" role="region">Sim, os visitantes têm liberdade para realizar ensaios fotográficos aproveitando o cenário. O festival acolhe muitos entusiastas e cosplayers, e ainda realiza o tradicional Concurso de Fotografia Fujifilm, que premia os autores dos melhores cliques do evento.<br>Atenção: Não permitimos a venda de fotos no parque!</div>
         </div>
 
         <div class="faq-item" role="listitem">
           <button class="faq-q" aria-expanded="false" aria-controls="faq13">Como funciona o sorteio do evento?<span class="faq-icon" aria-hidden="true">+</span></button>
-          <div class="faq-a" id="faq13" role="region">Detalhes sobre o sorteio do evento serão divulgados em breve. Acompanhe as redes sociais e o site oficial para mais informações.</div>
+          <div class="faq-a" id="faq13" role="region">O ticket da contribuição de estacionamento inclui um cupom para que o visitante concorra ao sorteio de um aparelho de TV, realizado no último dia do evento. Caso o ganhador não esteja presente no momento do sorteio, o evento entrará em contato com o ganhador por telefone.</div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq14">Achados e perdidos<span class="faq-icon" aria-hidden="true">+</span></button>
+          <div class="faq-a" id="faq14" role="region">Sim! Todos os itens encontrados durante os dias de festival (04, 05, 11 e 12 de julho) são direcionados para a rádio chamada do parque. Se você perder algo, procure algum dos voluntários do evento para maiores orientações. E se encontrar algum objeto perdido, agradecemos muito se puder entregá-lo por lá para ajudar outro visitante!</div>
         </div>
 
       </div>

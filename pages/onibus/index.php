@@ -22,19 +22,19 @@ get_header();
       <div class="redirect-card" aria-labelledby="redirect-title">
         <span class="redirect-icon" aria-hidden="true">🚌</span>
         <h2 id="redirect-title">Garanta seu lugar no ônibus oficial!</h2>
-        <p>A compra do ingresso do ônibus é feita pelo site da Sympla. Clique no botão abaixo para ser direcionado à página de venda.</p>
+        <p>A compra do ingresso do ônibus é feita pelo site da Ticket360. Clique no botão abaixo para ser direcionado à página de venda.</p>
 
         <div class="redirect-price" aria-label="Informações de preço e regras">
           <p><strong>Valor:</strong> R$ 60,00 + taxa de conveniência</p>
-          <p><strong>Plataforma:</strong> Sympla</p>
+          <p><strong>Plataforma:</strong> Ticket360</p>
           <p style="margin-top:.5rem;font-size:.88rem;color:var(--cinza)">🚫 Pets não são permitidos no ônibus &nbsp;·&nbsp; 🧒 Crianças com cinto obrigatório</p>
         </div>
 
         <div class="btn-row">
-          <a href="#" class="btn-p" aria-label="Comprar ingresso do ônibus oficial na Sympla" rel="noopener noreferrer">Comprar ingresso na Sympla</a>
+          <a href="https://www.ticket360.com.br/evento-composto/674/ingressos-para-29-festival-das-cerejeiras-bunkyos-sakura-matsuri?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnqm_aAIuONgYcwAxr_oyIQWn1iWaLsNBNd2n4DZYaoQgcUf9g_WfaI7kL0ao_aem_Sx5mOzSWToJarKOewW0kzg" class="btn-p" aria-label="Comprar ingresso do ônibus oficial na Ticket360" target="_blank" rel="noopener noreferrer">Comprar ingresso na Ticket360</a>
         </div>
 
-        <p style="font-size:.88rem;color:var(--cinza);margin:0">Ao clicar, você será redirecionado ao site da Sympla para finalizar a compra.</p>
+        <p style="font-size:.88rem;color:var(--cinza);margin:0">Ao clicar, você será redirecionado ao site da Ticket360 para finalizar a compra.</p>
       </div>
     </div>
   </section>
@@ -47,7 +47,7 @@ get_header();
         <div class="strip-card">
           <span class="strip-icon" aria-hidden="true">💳</span>
           <h3>Pagamento online</h3>
-          <p>A compra é feita pelo site da Sympla com cartão de crédito, débito, Pix ou boleto bancário.</p>
+          <p>A compra é feita pelo site da Ticket360 com cartão de crédito, débito, Pix ou boleto bancário.</p>
         </div>
         <div class="strip-card">
           <span class="strip-icon" aria-hidden="true">📱</span>

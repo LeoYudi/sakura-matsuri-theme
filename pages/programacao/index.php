@@ -27,10 +27,10 @@ get_header();
 
       <p class="tabs-label" id="tabs-label">Selecione o dia:</p>
       <div class="prog-tabs" role="tablist" aria-labelledby="tabs-label">
-        <button class="prog-tab active" role="tab" aria-selected="true" aria-controls="tab-content" data-day="Sábado, 04 de julho">Sábado 04/07</button>
-        <button class="prog-tab" role="tab" aria-selected="false" aria-controls="tab-content" data-day="Domingo, 05 de julho">Domingo 05/07</button>
-        <button class="prog-tab" role="tab" aria-selected="false" aria-controls="tab-content" data-day="Sábado, 11 de julho">Sábado 11/07</button>
-        <button class="prog-tab" role="tab" aria-selected="false" aria-controls="tab-content" data-day="Domingo, 12 de julho">Domingo 12/07</button>
+        <button class="prog-tab active" role="tab" aria-selected="true" aria-controls="tab-content" data-day="Sábado, 04 de julho">Sábado 04</button>
+        <button class="prog-tab" role="tab" aria-selected="false" aria-controls="tab-content" data-day="Domingo, 05 de julho">Domingo 05</button>
+        <button class="prog-tab" role="tab" aria-selected="false" aria-controls="tab-content" data-day="Sábado, 11 de julho">Sábado 11</button>
+        <button class="prog-tab" role="tab" aria-selected="false" aria-controls="tab-content" data-day="Domingo, 12 de julho">Domingo 12</button>
       </div>
 
       <div id="tab-content" role="tabpanel" aria-live="polite">

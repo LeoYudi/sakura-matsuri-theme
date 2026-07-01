@@ -214,24 +214,24 @@
 .logos-row {
   display: flex;
   flex-wrap: wrap;
-  gap: .9rem;
+  gap: 1.5rem;
   align-items: center;
   margin-bottom: .5rem;
 }
 
-.logo-ph {
-  background: var(--creme-rosado);
-  border-radius: 10px;
-  width: 140px;
+.logo-box {
+  width: auto;
   height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 600;
-  font-size: .78rem;
-  color: var(--rosa);
-  border: 1.5px dashed var(--rosa-claro);
+  padding: 0.25rem 0.5rem;
+}
+
+.logo-box img {
+  max-width: 140px;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 /* IMAGE BLOCKS */
@@ -245,6 +245,25 @@
 
 .img-block.short {
   min-height: 160px;
+}
+
+.img-block {
+  padding: 0;
+  border: none;
+  background: none;
+  overflow: hidden;
+}
+
+.img-block img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.img-block img:hover {
+  transform: scale(1.03);
 }
 
 @media(max-width: 860px) {

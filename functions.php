@@ -109,4 +109,25 @@ function import_js_by_page() {
   }
 }
 add_action('wp_enqueue_scripts', 'import_js_by_page');
+
+/* =====================================================
+ * SEO Tags Customization
+ * ===================================================== */
+function add_seo_meta_tags() {
+  if (is_front_page() || is_home()) {
+    echo '<meta name="description" content="Venha viver o evento mais florido do ano! Viva a gastronomia oriental, shows, Tooro Nagashi e mais de 1000 pés de cerejeiras no Parque Bunkyo Kokushikan.">' . "\n";
+    echo '<meta name="keywords" content="Sakura Matsuri 2026, Festival das Cerejeiras, Parque Bunkyo Kokushikan, Artist\'s Alley, Tooro Nagashi">' . "\n";
+  }
+}
+add_action('wp_head', 'add_seo_meta_tags');
+
+function custom_front_page_title($title) {
+  if (is_front_page()) {
+    $title['title'] = '29° Sakura Matsuri 2026 | Festival das Cerejeiras Bunkyos';
+    unset($title['site']);
+    unset($title['tagline']);
+  }
+  return $title;
+}
+add_filter('document_title_parts', 'custom_front_page_title');
 ?>

@@ -13,6 +13,7 @@ get_header();
       <p class="breadcrumb"><a href="<?php echo esc_url(home_url('/')); ?>">Início</a> › Hanami</p>
       <span class="tag">Venha contemplar as cerejeiras</span>
       <h1>Participe do Hanami</h1>
+      <p style="margin-top:.5rem;font-size:1.1rem;font-weight:500;color:var(--vinho)">📅 06 a 10/07 e 13 a 17/07 | Horário: 9h às 17h</p>
     </div>
   </div>
 
@@ -21,13 +22,8 @@ get_header();
     <div class="container">
       <div class="hanami-grid">
         <!-- Imagem principal -->
-        <div class="img-block tall" role="img" aria-label="Foto de visitantes contemplando as cerejeiras em flor no Parque Bunkyo – prática do Hanami">
-          <svg class="img-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" stroke="#fc7386" stroke-width="1.5" aria-hidden="true">
-            <rect x="4" y="10" width="40" height="30" rx="4" />
-            <circle cx="17" cy="22" r="4" />
-            <polyline points="4,32 15,22 23,30 30,22 44,36" />
-          </svg>
-          Foto principal do Hanami
+        <div class="img-block tall">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/static/images/hanami/capa%20hanami.png' ); ?>" alt="Foto de visitantes contemplando as cerejeiras em flor no Parque Bunkyo – prática do Hanami">
         </div>
         <!-- Texto -->
         <div class="hanami-body">
@@ -46,10 +42,10 @@ get_header();
             proporcionando um cenário único para este momento de paz e contemplação.
           </p>
           <div class="date-box" aria-label="Datas e horários do Hanami">
-            <p><strong>📅 Datas do Hanami:</strong></p>
-            <p>04, 05, 11 e 12 de julho de 2026</p>
-            <p style="margin-top:.5rem"><strong>⏰ Sábados:</strong> 10h às 19h</p>
-            <p><strong>⏰ Domingos:</strong> 10h às 17h</p>
+            <p><strong>📅 Datas do Hanami (visitação na semana):</strong></p>
+            <p>06 a 10 de julho e 13 a 17 de julho de 2026</p>
+            <p style="margin-top:.5rem"><strong>⏰ Horário de funcionamento:</strong> 9h às 17h</p>
+            <p style="margin-top:.5rem"><strong>🚗 Estacionamento:</strong> R$ 60,00</p>
             <p style="margin-top:.5rem"><strong>📍</strong> Parque Bunkyo Kokushikan – São Roque, SP</p>
           </div>
         </div>
@@ -57,21 +53,11 @@ get_header();
 
       <!-- Galeria de imagens -->
       <div class="img-grid" style="margin-top:2.5rem;" aria-label="Galeria de fotos do Hanami">
-        <div class="img-block medium" role="img" aria-label="Foto das cerejeiras em flor no parque">
-          <svg class="img-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" stroke="#fc7386" stroke-width="1.5" aria-hidden="true">
-            <rect x="4" y="10" width="40" height="30" rx="4" />
-            <circle cx="17" cy="22" r="4" />
-            <polyline points="4,32 15,22 23,30 30,22 44,36" />
-          </svg>
-          Cerejeiras em flor
+        <div class="img-block medium">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/static/images/hanami/cerejeiras.png' ); ?>" alt="Foto das cerejeiras em flor no parque">
         </div>
-        <div class="img-block medium" role="img" aria-label="Foto de famílias no piquenique sob as cerejeiras">
-          <svg class="img-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 48 48" stroke="#fc7386" stroke-width="1.5" aria-hidden="true">
-            <rect x="4" y="10" width="40" height="30" rx="4" />
-            <circle cx="17" cy="22" r="4" />
-            <polyline points="4,32 15,22 23,30 30,22 44,36" />
-          </svg>
-          Famílias no piquenique
+        <div class="img-block medium">
+          <img src="<?php echo esc_url( get_template_directory_uri() . '/static/images/hanami/familias%20piquenique.png' ); ?>" alt="Foto de famílias no piquenique sob as cerejeiras">
         </div>
       </div>
     </div>

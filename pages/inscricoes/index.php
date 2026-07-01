@@ -12,7 +12,7 @@ get_header();
     <div class="page-hero-inner">
       <p class="breadcrumb"><a href="<?php echo esc_url(home_url('/')); ?>">Início</a> › Inscrições</p>
       <span class="tag">Fique ligado!</span>
-      <h1>Inscreva-se nas atrações do Espaço Pop</h1>
+      <h1>Se inscreva nas atrações do nosso espaço Pop</h1>
     </div>
   </div>
 
@@ -39,20 +39,18 @@ get_header();
           <a href="#" class="btn-p" aria-label="Inscrever-se no Concurso Cosplay">Inscrever no Cosplay</a>
         </div>
 
-        <div class="form-card" aria-labelledby="alley-title">
-          <span class="form-card-kicker">Espaço para artistas independentes</span>
-          <h3 id="alley-title">Artist Alley</h3>
-          <p>Exponha e venda suas criações: fanarts, artesanatos e produtos autorais.</p>
-          <ul>
-            <li>Mesa: 2,20m x 0,80m</li>
-            <li>2 cadeiras incluídas</li>
-            <li>Pranchão e cavalete</li>
-            <li>Isenção de estacionamento</li>
-            <li>Internet para máquina de cartão</li>
-            <li>Água incluída</li>
-          </ul>
-          <span class="price-tag">R$ 350,00 / mesa</span>
-          <a href="#" class="btn-p" aria-label="Inscrever-se no Artist Alley">Inscrever no Artist Alley</a>
+        <div class="form-card" aria-labelledby="fujifilm-title">
+          <span class="form-card-kicker">Fujifilm</span>
+          <h3 id="fujifilm-title">Concurso de fotografia Fujifilm</h3>
+          <p>Leia o formulário de inscrição. [atualizar]</p>
+          <a href="#" class="btn-p" aria-label="Inscrever-se no Concurso de Fotografia">Inscrever na Fotografia</a>
+        </div>
+
+        <div class="form-card" aria-labelledby="sorteio-title">
+          <span class="form-card-kicker">Fique atento!</span>
+          <h3 id="sorteio-title">Sorteio da TV</h3>
+          <p>Leia o formulário de inscrição. . [atualizar]</p>
+          <a href="#" class="btn-p" aria-label="Acessar regulamento do sorteio">Sorteio da TV</a>
         </div>
 
       </div>
@@ -65,8 +63,8 @@ get_header();
   <section class="transport-section" aria-labelledby="transport-title">
     <div class="container">
       <span class="tag">Como chegar</span>
-      <h2 id="transport-title">Ônibus e caravanas</h2>
-      <p>Vai de ônibus ou tem uma caravana para levar ao evento? Veja como organizar o seu grupo.</p>
+      <h2 id="transport-title">Vai de ônibus ou tem uma caravana para levar ao evento? Veja como!</h2>
+      <p>Veja como organizar o seu grupo.</p>
 
       <div class="transport-grid">
 
@@ -78,19 +76,19 @@ get_header();
           </div>
           <div>
             <p style="font-size:.95rem"><strong>Venda presencial</strong> (para quem tem dificuldade online):</p>
-            <p style="font-size:.92rem;margin-top:.4rem">Secretaria do Bunkyo<br>Seg–sex, das 9h às 18h<br>Rua São Joaquim, 381 – Liberdade, SP<br><a href="tel:+551132081755" style="color:var(--azul)">(11) 3208-1755</a></p>
+            <p style="font-size:.92rem;margin-top:.4rem">Secretaria do Bunkyo, seg–sex, 9h às 18h · Rua São Joaquim, 381 – Liberdade, SP · Tel: (11) 3208-1755</p>
           </div>
           <ul class="transport-rules" aria-label="Regras do ônibus oficial">
             <li>🚫 Pets não são permitidos no ônibus</li>
             <li>🧒 Crianças com cinto de segurança obrigatório</li>
           </ul>
-          <a href="<?php echo esc_url(home_url('/onibus')); ?>" class="btn-p" aria-label="Garantir ingresso do ônibus oficial">Garantir meu ingresso</a>
+          <a href="https://www.ticket360.com.br/evento-composto/674/ingressos-para-29-festival-das-cerejeiras-bunkyos-sakura-matsuri?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnqm_aAIuONgYcwAxr_oyIQWn1iWaLsNBNd2n4DZYaoQgcUf9g_WfaI7kL0ao_aem_Sx5mOzSWToJarKOewW0kzg" class="btn-p" target="_blank" rel="noopener noreferrer" aria-label="Garanta seu ingresso do ônibus oficial">Garanta seu ingresso</a>
         </div>
 
         <!-- Caravanas -->
         <div class="transport-box" aria-labelledby="caravana-box-title">
           <h3 id="caravana-box-title">🚍 Caravanas para o Festival</h3>
-          <p style="font-size:.95rem">Organize um grupo e venha de ônibus fretado! Escolha o veículo pelo tamanho da sua turma.</p>
+          <p style="font-size:.95rem">Organize um group e venha de ônibus fretado! Escolha o veículo pelo tamanho da sua turma.</p>
           <div style="overflow-x:auto;border-radius:10px;border:1.5px solid var(--rosa-claro)">
             <table class="caravana-table" aria-label="Preços de caravana por tipo de veículo">
               <thead>
@@ -107,7 +105,7 @@ get_header();
               </tbody>
             </table>
           </div>
-          <a href="#" class="btn-s" aria-label="Inscrever caravana para o festival">Inscreva sua caravana</a>
+          <a href="https://www.ticket360.com.br/evento-composto/674/ingressos-para-29-festival-das-cerejeiras-bunkyos-sakura-matsuri?fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQMMjU2MjgxMDQwNTU4AAGnqm_aAIuONgYcwAxr_oyIQWn1iWaLsNBNd2n4DZYaoQgcUf9g_WfaI7kL0ao_aem_Sx5mOzSWToJarKOewW0kzg" class="btn-s" target="_blank" rel="noopener noreferrer" aria-label="Inscreva sua caravana">Inscreva sua caravana</a>
         </div>
 
       </div>
